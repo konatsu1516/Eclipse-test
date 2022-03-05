@@ -29,7 +29,6 @@ public class Main {
 		
 		//日付順に並び替えたタスクのリストを生成
 		taskList.stream()
-		.filter(t -> t.isDone() == false)
 		.sorted((t1,t2) -> t1.compareTo(t2))
 		.collect(Collectors.toList());
 
